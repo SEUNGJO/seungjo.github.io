@@ -10,7 +10,7 @@ menu:
   - name: ACADEMIC PROJECTS (UCLA)
     submenu:
       - name: MATH142
-        link: /projects/math142
+        link: /math142
   - name: Posts
     link: /
   - name: Tags
