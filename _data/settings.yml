@@ -1,7 +1,7 @@
 # Change 'comments' to true for Disqus comments
 disqus:
   comments: true
-  disqus_shortname: 'apham'
+  disqus_shortname: 'seungjae oh'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-91332049-1'
@@ -10,9 +10,7 @@ menu:
   - name: ACADEMIC PROJECTS (UCLA)
     submenu:
       - name: MicroBam
-        link: /projects/microbam
-      - name: OurLegacy
-        link: /projects/ourlegacy
+        link: /projects/math142
   - name: Posts
     link: /
   - name: Tags
