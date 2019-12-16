@@ -7,10 +7,6 @@ disqus:
 google-ID: 'UA-154591283-1'
 
 menu: 
-  - name: ACADEMIC PROJECTS (UCLA)
-    submenu:
-      - name: MATH142
-        link: /math142
   - name: Posts
     link: /
   - name: Tags
