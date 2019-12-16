@@ -13,13 +13,16 @@ menu:
     link: /tags
   - name: About
     link: /about
-      - name: GitHub
-        icon: github
-        link: http://github.com/seungjo
-      - name: LinkedIn
-        icon: linkedin-square
-        link: http://www.linkedin.com/in/seungjae-oh-095853a5
-      - name: Twitter
-        icon: twitter
-        link: https://twitter.com/
+  - name: GitHub
+    icon: github
+    link: http://github.com/seungjo
+  - name: LinkedIn
+    icon: linkedin-square
+    link: http://www.linkedin.com/in/seungjae-oh-095853a5
+  - name: Twitter
+    icon: twitter
+    link: https://twitter.com/
+  - name: Kaggle
+    icon: Kaggle
+    Link: https://www.kaggle.com/seungjo2
     
