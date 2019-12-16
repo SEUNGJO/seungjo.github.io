@@ -27,4 +27,7 @@ menu:
       - name: Facebook
         icon: facebook
         link: https://www.facebook.com/profile.php?id=100007812915705/
+      - name: Kaggle
+        icon: kaggle
+        link: https://www.kaggle.com/seungjo2
     
