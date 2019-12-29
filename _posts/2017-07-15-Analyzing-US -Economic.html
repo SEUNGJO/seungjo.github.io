@@ -68,3 +68,16 @@ gdp_df = pd.read_csv(links["GDP"])
 gdp_df.head()
 
 {% endhighlight %}
+
+<h2> Display a dataframe where unemployment was greater than 8.5%. </h2>
+{% highlight shell %}
+import pandas as pd
+links={'GDP':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_gdp.csv',\
+       'unemployment':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_unemployment.csv'}
+df = pd.read_csv(links["unemployment"])
+df["unemployment"] >= 0.085
+
+{% endhighlight %}
+
+Name: unemployment, Length: 69, dtype: bool
+
