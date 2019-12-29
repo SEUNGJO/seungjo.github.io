@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Analyzing US Economic Data and Building a Dashboard"
+date: 2017-07-01 05:00:00 +0200
+published: 2019-12-28 05:00:00 +0200
+comments: true
+categories: Data Analysis
+tags: [DataScience, Data Analysis,]
+github: "https://github.com/SEUNGJO/PythonDataScience"
+---
+
+<p>
+Extracting essential data from a dataset and displaying it is a necessary part of data science; therefore individuals can make correct decisions based on the data. In this assignment, you will extract some essential economic indicators from some data, you will then display these economic indicators in a Dashboard.
+Gross domestic product (GDP) is a measure of the market value of all the final goods and services produced in a period. GDP is an indicator of how well the economy is doing. A drop in GDP indicates the economy is producing less; similarly an increase in GDP suggests the economy is performing better. In this lab, you will examine how changes in GDP impact the unemployment rate.
+</p>
+
+<!--more-->
+
+<h2> Define Function that Makes a Dashboard </h2>
+
+<p>
+We will import the following libraries.
+
+</p>
+
+{% highlight shell %}
+import pandas as pd
+from bokeh.plotting import figure, output_file, show,output_notebook
+output_notebook()
+{% endhighlight %}
