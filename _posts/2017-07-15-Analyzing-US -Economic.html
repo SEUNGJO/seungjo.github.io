@@ -78,7 +78,8 @@ links={'GDP':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/
        'unemployment':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_unemployment.csv'}
 df = pd.read_csv(links["unemployment"])
 df["unemployment"] >= 0.085
-
+df1=df[df["unemployment"] >= 0.085]
+df1
 {% endhighlight %}
   <a href="/assets/images/{{page.id}}/2.png">
   <img class="center-block img-responsive" src="/assets/images/{{page.id}}/2.png" alt=""/></a>
