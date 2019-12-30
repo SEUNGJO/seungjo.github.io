@@ -96,3 +96,27 @@ and healthy_school_certified = 'Yes'
 %sql select avg(safety_score) from CHICAGO_PUBLIC_SCHOOLS
 
 {% endhighlight %}
+<h2>List the top 5 Community Areas by average College Enrollment [number of students]</h2>
+{% highlight shell %}
+%%sql
+select community_area_name
+FROM CHICAGO_PUBLIC_SCHOOLS
+GROUP BY community_area_name
+ORDER BY SUM(college_enrollment) / COUNT(name_of_school) DESC
+LIMIT 5
+{% endhighlight %}
+<h2>Use a sub-query to determine which Community Area has the least value for school Safety Score?</h2>
+{% highlight shell %}
+%%sql
+select community_area_name
+FROM CHICAGO_PUBLIC_SCHOOLS
+where safety_score = (select min(safety_score) from CHICAGO_PUBLIC_SCHOOLS )
+{% endhighlight %}
+<h2>[Without using an explicit JOIN operator] Find the Per Capita Income of the Community Area which has a school Safety Score of 1.</h2>
+{% highlight shell %}
+%%sql
+select D.per_capita_income
+from CENSUS_DATA AS D, CHICAGO_PUBLIC_SCHOOLS AS S
+where D.community_area_number = S.community_area_number
+AND S.safety_score = 1
+{% endhighlight %}
