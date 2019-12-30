@@ -66,3 +66,10 @@ Let us first load the SQL extension and establish a connection with the database
 # Rows in Crime table
 %sql SELECT COUNT(*) FROM CHICAGO_CRIME_DATA
 {% endhighlight %}
+<h2>Retrieve first 10 rows from the CRIME table</h2>
+{% highlight shell %}
+%sql select * from CHICAGO_CRIME_DATA limit 10
+{% endhighlight %}
+<h2>How many crimes involve an arrest?</h2>
+{% highlight shell %}%sql select count (*) from CHICAGO_CRIME_DATA where arrest{% endhighlight %}
+
